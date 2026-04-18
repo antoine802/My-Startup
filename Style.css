@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+ 
+/* ── Reset & base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  background-color: #f4f1ec;
+  color: #2c2c2c;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+ 
+/* ══════════════════════════════
+   BANNER
+══════════════════════════════ */
+.banner {
+  background-image: linear-gradient(
+    rgba(10, 30, 15, 0.65),
+    rgba(10, 30, 15, 0.65)
+  ), url('../images/card1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0 100px 0;
+  text-align: center;
+  color: white;
+}
+ 
+.banner h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+ 
+.banner h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+}
+ 
+/* ── Bouton principal ── */
+.btn-yellow {
+  display: inline-block;
+  background-color: #c8a84b;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 40px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+.btn-yellow:hover {
+  background-color: #a8883a;
+  transform: translateY(-2px);
+}
+ 
+/* ══════════════════════════════
+   CONTAINER
+══════════════════════════════ */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+ 
+/* ══════════════════════════════
+   SECTION PROFIL
+══════════════════════════════ */
+.container > h2:first-of-type {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #1a1a1a;
+  margin-top: 70px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+ 
+.subtitle {
+  font-size: 14px;
+  color: #7a7a6a;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+ 
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #c8a84b;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  display: block;
+  margin-bottom: 60px;
+}
+ 
+/* ══════════════════════════════
+   TITRE "NOS SERVICES"
+══════════════════════════════ */
+.container > h2:last-of-type {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: #1a1a1a;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  position: relative;
+  display: inline-block;
+}
+ 
+.container > h2:last-of-type::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #c8a84b;
+  margin-top: 8px;
+}
+ 
+/* ══════════════════════════════
+   CARDS
+══════════════════════════════ */
+.cards {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+ 
+.card {
+  flex: 1;
+  min-width: 200px;
+  background: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+}
+ 
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+ 
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  padding: 16px 20px;
+  text-align: center;
+  border-top: 2px solid #c8a84b;
+}
